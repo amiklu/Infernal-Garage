@@ -20,7 +20,7 @@ h1 {
 .grid-layout {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 300px 1000px 300px 500px 100px;
+    grid-template-rows: repeat(5, auto);
     gap: 10px 50px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -242,3 +242,183 @@ h1 {
     padding: 10px;
 
 }
+
+/* Querie Mobile */
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    body {
+        text-align: center;
+        background-image: url(../img/lavamobile.png);
+        background-size: auto;
+
+    }
+
+    .grid-layout {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "section-img"
+            "section-a"
+            "section-b"
+            "section-c"
+            "article"
+            "footer";
+    }
+
+    .grid__gallery {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "section1"
+            "section2"
+            "section3"
+            "section4"
+            "footer";
+    }
+
+    .header {
+        flex-direction: column;
+        align-self: center;
+        width: 90%;
+    }
+
+    .section-img {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .article {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .section-a {
+        grid-area: section-a;
+        background-color: white;
+        border-radius: 1rem;
+        border-color: lightgray;
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+    }
+
+    .hondalogo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-b {
+        grid-area: section-b;
+        background-color: white;
+        border-radius: 1rem;
+        border-color: lightgray;
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+    }
+
+    .vwlogo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-c {
+        grid-area: section-c;
+        background-color: white;
+        border-radius: 1rem;
+        border-color: lightgray;
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+    }
+
+    .audilogo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Querie Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        background-image: url(../img/lavatablet.png);
+        background-size: auto;
+
+    }
+
+    .grid-layout {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "section-img"
+            "section-a"
+            "section-b"
+            "section-c"
+            "article"
+            "footer";
+    }
+
+    .header {
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+    }
+
+    .article {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .footer {
+        width: 80%;
+        margin: auto;
+    }
+
+    .section-a {
+        grid-area: section-a;
+        background-color: white;
+        border-radius: 1rem;
+        border-color: lightgray;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .hondalogo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-b {
+        grid-area: section-b;
+        background-color: white;
+        border-radius: 1rem;
+        border-color: lightgray;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .vwlogo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-c {
+        grid-area: section-c;
+        background-color: white;
+        border-radius: 1rem;
+        border-color: lightgray;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .audilogo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Querie Desktop */
+@media only screen and (min-width: 1025px) {}
