@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  itial-scale=1.0">
+    <title>Infernal Garage</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hijo header">
+        <nav>
+            <a href="../index.html"><img class="hijo logo" src="../assets/img/logoinfernal.png" alt=""></a>
+            <ul class="hijo menu">
+                <li>
+                    <a class="header__link" href="../pages/galeria.html">
+                        Galeria</a>
+                </li>
+                <li>
+                    <a class="header__link" href="../pages/marcas.html">Marcas</a>
+                </li>
+                <li>
+                    <a class="header__link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li>
+                    <a class="header__link" href="../pages/contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <h1>CONTACTO</h1>
+
+    <br>
+    <br>
+
+    <main class="contacto">
+        <h5 class="bienvenida">Bienvenido/a a nuestra página de contacto! Aquí es donde puedes encontrar toda la
+            información que necesitas para ponerte en contacto con nosotros. Si tienes alguna pregunta, comentario o
+            inquietud sobre nuestros productos o servicios, no dudes en ponerte en contacto con nosotros!</h3>
+            <br>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Luca">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="surname">Apellido</label>
+                        <input type="text" placeholder="Amica">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mail">Email *</label>
+                        <input type="email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="pais">Nacionalidad</label>
+                        <select name="pais" id="">
+                            <option value="arg">Argentina</option>
+                            <option value="uy">Uruguay</option>
+                            <option value="col">Colombia</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="sexo">Género</label>
+                        <input type="radio" name="sexo" value="Hombre ">Hombre
+                        <input type="radio" name="sexo" value="Mujer ">Mujer
+                    </div>
+                    <br>
+                    <div>
+                        <label for="comentarios">Escribe tu opinión</label><br>
+                        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar formulario">
+                    </div>
+            </form>
+            </fieldset>
+
+    </main>
+
+    <br>
+    <br>
+
+    <footer class="hijo footer">
+        Terminos y Condiciones - Privacidad - Nuestra Compañia
+    </footer>
+</body>
+
+</html>
