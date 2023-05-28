@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/lava.png);
+  font-family: 'Noto Sans', sans-serif; }
+
+header logoinfernal {
+  width: 70px;
+  border-radius: 50%; }
+
+header fondobar {
+  background-image: url(../img/lava2.png); }
+
+header brandcars {
+  display: flex;
+  padding: 3rem;
+  justify-content: space-evenly; }
+
+footer {
+  background-color: blue; }
