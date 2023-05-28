@@ -4,88 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,  itial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Infernal Garage</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
     <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>INFERNAL GARAGE</h1>
-    <div class="grid-layout">
-        <header class="hijo header">
-            <nav>
-                <img class="hijo logo" src="./assets/img/logoinfernal.png" alt="">
-                <ul class="hijo menu">
-                    <li>
-                        <a class="header__link" href="./pages/galeria.html">
-                            Galeria</a>
-                    </li>
-                    <li>
-                        <a class="header__link" href="./pages/marcas.html">Marcas</a>
-                    </li>
-                    <li>
-                        <a class="header__link" href="./pages/productos.html">Productos</a>
-                    </li>
-                    <li>
-                        <a class="header__link" href="./pages/contacto.html">Contacto</a>
-                    </li>
+    <header>
+        <h1 class="text-center">INFERNAL GARAGE</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--Se agregó la Navbar-->
+            <div class="container-fluid fondobar">
+                <a class="navbar-brand" href="/index.html"><img class="logoinfernal" src="./assets/img/logoinfernal.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu fondobar">
+                                <li><a class="dropdown-item text-white" href="./pages/marcas.html">Marcas</a></li>
+                                <li><a class="dropdown-item text-white" href="./pages/productos.html">Productos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-white" href="/pages/contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Ir</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                </ul>
-            </nav>
-        </header>
-        <section class="hijo section-img">
-            <img class="cuatri1" src="./assets/img/Cuatri1.jpg" alt="">
-        </section>
-        <section class="hijo section-a">
-            <a href="./pages/galeria.html"><img class="hondalogo" src="./assets/img/hondalogo.png" alt=""></a>
-        </section>
-        <section class="hijo section-b">
-            <a href="./pages/galeria.html"><img class="vwlogo" src="./assets/img/vwlogo.png" alt=""></a>
-        </section>
-        <section class="hijo section-c">
-            <a href="./pages/galeria.html"><img class="audilogo" src="./assets/img/audilogo.png" alt=""></a>
+    <main>
+
+        <div id="carouselExample" class="carousel slide"> <!--Se implementa un Carousel de imagenes-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/beautiful-car-washing-service.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/car-wash-detailing-station.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/beautiful-car.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="brandcars"> <!--Creamos una Section para las tres marcas principales en el index-->
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/audilogo.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/hondalogo.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/vwlogo.png" class="card-img-top" alt="...">
+            </div>
         </section>
 
-        <article class="hijo article">
-            ¡Bienvenidos a nuestro sitio web, donde te presentamos nuestra empresa de lavado de autos y detailing!
+        <article class="art-index"> <!--Un Article que explica brevemente el sitio web-->
+            ¡Bienvenidos a este sitio web, donde te presentamos nuestra empresa de lavado de autos y detailing!
             <p>
                 En primer lugar, nuestra empresa se dedica al cuidado y mantenimiento de vehículos de todo tipo,
                 desde automóviles hasta camiones y SUV. Ofrecemos una amplia gama de servicios de lavado de autos y
                 detailing, que van desde un simple lavado hasta un detallado completo del vehículo. Nos esforzamos
-                por brindar un servicio de calidad y personalizado a cada uno de nuestros clientes.</p>
-
-            <p>
+                por brindar un servicio de calidad y personalizado a cada uno de nuestros clientes.
                 En nuestra empresa, entendemos la importancia que tiene para nuestros clientes su vehículo, y es por
                 eso que utilizamos solo los mejores productos y equipos de lavado y detailing disponibles en el
                 mercado. Además, nuestro personal altamente capacitado y experimentado se asegura de que cada
-                vehículo que llega a nuestras instalaciones reciba el cuidado y la atención que merece.</p>
-
-            <p>
+                vehículo que llega a nuestras instalaciones reciba el cuidado y la atención que merece.
                 En cuanto a las marcas de vehículos que atendemos, no importa si tienes un Toyota, un BMW, un Audi o
                 un Chevrolet, en nuestra empresa podemos cuidar de tu vehículo sin importar la marca o modelo. Nos
                 enorgullece ofrecer un servicio excepcional a cada uno de nuestros clientes, independientemente de
-                la marca o modelo de su vehículo.</p>
-
-            <p>
+                la marca o modelo de su vehículo.
                 En cuanto a nuestra filosofía, creemos que cada vehículo es una inversión importante y es por eso
                 que tratamos cada uno de ellos con el mismo nivel de cuidado y atención que si fuera nuestro propio
-                vehículo.</p>
-
-            <p>
+                vehículo.
                 Por último, nos enorgullece brindar un servicio excepcional a cada uno de nuestros clientes, y nos
                 esforzamos por asegurarnos de que cada persona que entra por nuestras puertas reciba un servicio de
                 calidad y una atención personalizada. Nos aseguramos de escuchar as necesidades de cada cliente y
                 trabajar con ellos para asegurarnos de que reciban el mejor servicio posible.</p>
 
         </article>
-        <footer class="hijo footer">
-            Terminos y Condiciones - Privacidad - Nuestra Compañia
-        </footer>
-    </div>
+    </main>
+
+    <footer>
+        Terminos y Condiciones - Privacidad - Nuestra Compañia
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
