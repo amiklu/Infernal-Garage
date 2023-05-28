@@ -4,20 +4,65 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url(../img/lava.png);
-  font-family: 'Noto Sans', sans-serif; }
+  background-image: url(../assets/img/lava.png);
+  font-family: 'Nunito', sans-serif; }
 
-header logoinfernal {
+header h1 {
+  color: #E8E8E8; }
+
+header .logoinfernal {
   width: 70px;
   border-radius: 50%; }
 
-header fondobar {
-  background-image: url(../img/lava2.png); }
+header .fondobar {
+  background-image: url(../assets/img/lava2.png);
+  padding: .5rem;
+  margin: .5rem;
+  color: #F6F6F6;
+  border: solid 3px #990100;
+  border-radius: 1rem;
+  font-size: x-large; }
 
-header brandcars {
+header .hovermenu {
+  color: #F6F6F6;
+  text-decoration: none; }
+  header .hovermenu:hover {
+    background-color: #333333;
+    color: #F6F6F6;
+    border-radius: 10px; }
+
+.carousel {
+  padding: .5rem; }
+
+.brandcars {
   display: flex;
   padding: 3rem;
   justify-content: space-evenly; }
+  .brandcars .card {
+    border: solid 5px #333333;
+    border-radius: 5%;
+    justify-content: center; }
+
+.art-index {
+  background-color: #333333;
+  border: solid 3px #990100;
+  border-radius: 10px;
+  color: #F6F6F6;
+  margin: .5rem;
+  padding: 10px;
+  text-align: justify; }
+  .art-index #p0 {
+    text-align: center; }
 
 footer {
-  background-color: blue; }
+  background-color: #990100;
+  border: solid 3px #333333;
+  border-radius: 10px;
+  color: #E8E8E8;
+  text-align: center;
+  margin: .5rem;
+  padding: 1rem; }
+  footer .remarcar {
+    text-decoration: none;
+    font-weight: bold;
+    color: #F6F6F6; }

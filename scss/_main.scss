@@ -1,0 +1,29 @@
+.carousel {
+    padding: .5rem;
+}
+
+.brandcars {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-evenly;
+
+    .card {
+        border: solid 5px $gray;
+        border-radius: 5%;
+        justify-content: center;
+    }
+}
+
+.art-index {
+    background-color: $gray;
+    border: solid 3px $darkred;
+    border-radius: 10px;
+    color: $white;
+    margin: .5rem;
+    padding: 10px;
+    text-align: justify;
+
+    #p0 {
+        text-align: center;
+    }
+}
