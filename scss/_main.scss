@@ -27,3 +27,14 @@
         text-align: center;
     }
 }
+
+.galeria {
+    border: ridge 5px $darkred;
+    margin: 1%;
+}
+
+.pagination .page-link {
+    background: $gray;
+    color: $whitesmoke;
+    border-color: $darkred;
+}
