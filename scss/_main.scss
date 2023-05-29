@@ -33,8 +33,46 @@
     margin: 1%;
 }
 
-.pagination .page-link {
-    background: $gray;
+.pagination {
+
+    .page-link {
+        background: $gray;
+        color: $whitesmoke;
+        border-color: $darkred;
+    }
+
+}
+
+.marca {
+    border: ridge 5px $darkred;
+    background-color: $gray;
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.card {
     color: $whitesmoke;
-    border-color: $darkred;
+    background-color: $gray;
+    margin: 1%;
+    height: 50%;
+    object-fit: fill;
+}
+
+.contacto {
+    background-color: $gray;
+    border: solid 5px $darkred;
+    border-radius: 10px;
+    color: $white;
+    margin: .5rem;
+    padding: .5rem;
+
+    .bienvenida {
+        text-align: center;
+    }
+
+    .form {
+        text-align: center;
+        padding: 1rem;
+    }
 }

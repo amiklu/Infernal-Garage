@@ -63,6 +63,33 @@ header .hovermenu {
   color: #E8E8E8;
   border-color: #990100; }
 
+.marca {
+  border: ridge 5px #990100;
+  background-color: #333333;
+  width: 200px;
+  height: 200px;
+  object-fit: fill; }
+
+.card {
+  color: #E8E8E8;
+  background-color: #333333;
+  margin: 1%;
+  height: 50%;
+  object-fit: fill; }
+
+.contacto {
+  background-color: #333333;
+  border: solid 5px #990100;
+  border-radius: 10px;
+  color: #F6F6F6;
+  margin: .5rem;
+  padding: .5rem; }
+  .contacto .bienvenida {
+    text-align: center; }
+  .contacto .form {
+    text-align: center;
+    padding: 1rem; }
+
 footer {
   background-color: #990100;
   border: solid 3px #333333;
