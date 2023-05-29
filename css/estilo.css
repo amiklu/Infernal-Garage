@@ -39,9 +39,14 @@ header .hovermenu {
   padding: 3rem;
   justify-content: space-evenly; }
   .brandcars .card {
-    border: solid 5px #333333;
+    background-color: #333333;
+    border: solid 5px #990100;
     border-radius: 5%;
-    justify-content: center; }
+    justify-content: center;
+    transform: scale(1, 1);
+    transition: all 1s; }
+    .brandcars .card:hover {
+      background-color: #E8E8E8; }
 
 .art-index {
   background-color: #333333;
@@ -50,13 +55,18 @@ header .hovermenu {
   color: #F6F6F6;
   margin: .5rem;
   padding: 10px;
-  text-align: justify; }
+  text-align: justify;
+  line-height: normal; }
   .art-index #p0 {
     text-align: center; }
 
 .galeria {
-  border: ridge 5px #990100;
-  margin: 1%; }
+  border: ridge 3px #990100;
+  margin: 10px;
+  transform: scale(1, 1);
+  transition: all 2s; }
+  .galeria:hover {
+    transform: scale(1.05, 1.1); }
 
 .pagination .page-link {
   background: #333333;
@@ -64,31 +74,53 @@ header .hovermenu {
   border-color: #990100; }
 
 .marca {
-  border: ridge 5px #990100;
+  display: flex;
+  justify-content: center;
+  border: solid 3px #990100;
   background-color: #333333;
-  width: 200px;
-  height: 200px;
-  object-fit: fill; }
+  margin: .5rem;
+  padding: 1rem;
+  height: 300px;
+  max-width: 100%;
+  transform: scale(1, 1);
+  transition: all 1s; }
+  .marca:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #E8E8E8; }
 
-.card {
-  color: #E8E8E8;
-  background-color: #333333;
-  margin: 1%;
-  height: 50%;
-  object-fit: fill; }
+.producto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px #333333;
+  background-color: #E8E8E8;
+  color: #333333;
+  margin: 2rem;
+  padding: 2rem;
+  max-height: 100%;
+  width: 100px;
+  transform: scale(1, 1);
+  transition: all 0.5s; }
+  .producto:hover {
+    transform: scale(1.03, 1.03);
+    background-color: lightpink; }
 
 .contacto {
   background-color: #333333;
   border: solid 5px #990100;
   border-radius: 10px;
   color: #F6F6F6;
-  margin: .5rem;
-  padding: .5rem; }
+  margin: 2rem;
+  padding: 1rem; }
   .contacto .bienvenida {
-    text-align: center; }
+    text-align: justify; }
   .contacto .form {
+    align-items: center;
     text-align: center;
     padding: 1rem; }
+
+.form-control {
+  background-color: #E8E8E8; }
 
 footer {
   background-color: #990100;

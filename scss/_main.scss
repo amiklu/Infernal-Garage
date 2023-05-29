@@ -8,9 +8,16 @@
     justify-content: space-evenly;
 
     .card {
-        border: solid 5px $gray;
+        background-color: $gray;
+        border: solid 5px $darkred;
         border-radius: 5%;
         justify-content: center;
+        transform: scale(1.0, 1.0);
+        transition: all 1s;
+
+        &:hover {
+            background-color: $whitesmoke
+        }
     }
 }
 
@@ -22,6 +29,7 @@
     margin: .5rem;
     padding: 10px;
     text-align: justify;
+    line-height: normal;
 
     #p0 {
         text-align: center;
@@ -29,8 +37,14 @@
 }
 
 .galeria {
-    border: ridge 5px $darkred;
-    margin: 1%;
+    border: ridge 3px $darkred;
+    margin: 10px;
+    transform: scale(1.0, 1.0);
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.05, 1.1);
+    }
 }
 
 .pagination {
@@ -44,19 +58,42 @@
 }
 
 .marca {
-    border: ridge 5px $darkred;
+    display: flex;
+    justify-content: center;
+    border: solid 3px $darkred;
     background-color: $gray;
-    width: 200px;
-    height: 200px;
-    object-fit: fill;
+    margin: .5rem;
+    padding: 1rem;
+    height: 300px;
+    max-width: 100%;
+    transform: scale(1.0, 1.0);
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+        background-color: $whitesmoke;
+    }
+
 }
 
-.card {
-    color: $whitesmoke;
-    background-color: $gray;
-    margin: 1%;
-    height: 50%;
-    object-fit: fill;
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px $gray;
+    background-color: $whitesmoke;
+    color: $gray;
+    margin: 2rem;
+    padding: 2rem;
+    max-height: 100%;
+    width: 100px;
+    transform: scale(1.0, 1.0);
+    transition: all 0.5s;
+
+    &:hover {
+        transform: scale(1.03, 1.03);
+        background-color: lightpink;
+    }
 }
 
 .contacto {
@@ -64,15 +101,20 @@
     border: solid 5px $darkred;
     border-radius: 10px;
     color: $white;
-    margin: .5rem;
-    padding: .5rem;
+    margin: 2rem;
+    padding: 1rem;
 
     .bienvenida {
-        text-align: center;
+        text-align: justify;
     }
 
     .form {
+        align-items: center;
         text-align: center;
         padding: 1rem;
     }
+}
+
+.form-control {
+    background-color: $whitesmoke;
 }
