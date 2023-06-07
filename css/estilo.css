@@ -65,6 +65,8 @@ header .hovermenu {
   line-height: normal; }
   .art-index #p0 {
     text-align: center; }
+  .art-index .texto {
+    font-size: larger; }
 
 .galeria {
   border: ridge 3px #990100;
@@ -122,7 +124,7 @@ header .hovermenu {
   margin: 2rem;
   padding: 5%; }
   .contacto .bienvenida {
-    text-align: justify; }
+    text-align: center; }
   .contacto .form {
     align-items: center;
     text-align: center;
@@ -138,7 +140,8 @@ footer {
   color: #E8E8E8;
   text-align: center;
   margin: .5rem;
-  padding: 1rem; }
+  padding: 1rem;
+  font-size: x-large; }
   footer .remarcar {
     text-decoration: none;
     font-weight: bold;
