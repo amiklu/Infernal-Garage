@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- Bootstrap-->
-    <title>Infernal Garage</title>
+    <title>Inicio | Infernal Garage</title>
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="icon" href="./assets/img/logoinfernal.png" type="image/x-icon">
     <!-- Fonts Google-->
@@ -23,7 +23,6 @@
 
 <body>
     <header>
-        <h1 class="text-center">INFERNAL GARAGE</h1>
         <!-- Se agrega la NavBar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fondobar">
             <div class="container-fluid">
@@ -44,7 +43,7 @@
                             <a class="nav-link text-white hovermenu" href="./pages/galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item dropdown hovermenu">
-                            <a class="nav-link dropdown-toggle text-white " href="#" role="button"
+                            <a class="nav-link dropdown-toggle text-white dropdown" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorías
                             </a>
@@ -66,11 +65,13 @@
                 </div>
             </div>
         </nav> <!-- Cerramos NavBar-->
+
+        <h1 class="text-center">INFERNAL GARAGE</h1> <!-- h1 debajo del navbar-->
     </header>
 
     <main>
         <!-- Integración de Carrusel de Imágenes-->
-        <div id="carouselExample" class="carousel slide carousel">
+        <div id="carouselExample" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./assets/img/beautiful-car.jpg" class="d-block w-100" alt="Lamborghini Huracan">
@@ -94,50 +95,44 @@
             </button>
         </div> <!-- Cerramos Carrusel-->
 
-        <!-- Section para las tres Marcas Principales-->
-        <section class="brandcars">
-            <div class="card" style="width: 18rem;">
-                <a href="https://www.audi.com.ar/ar/web/es.html"><img src="./assets/img/audilogo.png"
-                        class="card-img-top" alt="Logo de Audi"></a>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <a href="https://www.astonmartin.com/en/"><img src="./assets/img/amlogo.png" class="card-img-top"
-                        alt="Logo de Aston Martin"></a>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <a href="https://www.honda.com.ar/"><img src="./assets/img/hondalogo.png" class="card-img-top"
-                        alt="Logo de Honda"></a>
-            </div>
-        </section> <!-- Cerramos Section Brandcars-->
+        <h2 class="text-center">NUESTROS PATROCINADORES</h1>
 
-        <!--Article detallando brevemente la empresa-->
-        <article class="art-index">
-            <h2 id="p0">
-                ¡Bienvenidos a Infernal Garage, donde te presentamos nuestra empresa de lavado de autos y
-                detailing!
-            </h2> <!-- h2 para el título de bienvenida-->
-            <p class="texto">
-                En primer lugar, nuestra empresa se dedica al cuidado y mantenimiento de vehículos de todo tipo,
-                desde automóviles hasta camiones y SUV. Ofrecemos una amplia gama de servicios de lavado de autos y
-                detailing, que van desde un simple lavado hasta un detallado completo del vehículo. Nos esforzamos
-                por brindar un servicio de calidad y personalizado a cada uno de nuestros clientes.
-                En nuestra empresa, entendemos la importancia que tiene para nuestros clientes su vehículo, y es por
-                eso que utilizamos solo los mejores productos y equipos de lavado y detailing disponibles en el
-                mercado. Además, nuestro personal altamente capacitado y experimentado se asegura de que cada
-                vehículo que llega a nuestras instalaciones reciba el cuidado y la atención que merece.
-                En cuanto a las marcas de vehículos que atendemos, no importa si tienes un Toyota, un BMW, un Audi o
-                un Chevrolet, en nuestra empresa podemos cuidar de tu vehículo sin importar la marca o modelo. Nos
-                enorgullece ofrecer un servicio excepcional a cada uno de nuestros clientes, independientemente de
-                la marca o modelo de su vehículo.
-                En cuanto a nuestra filosofía, creemos que cada vehículo es una inversión importante y es por eso
-                que tratamos cada uno de ellos con el mismo nivel de cuidado y atención que si fuera nuestro propio
-                vehículo.
-                Por último, nos enorgullece brindar un servicio excepcional a cada uno de nuestros clientes, y nos
-                esforzamos por asegurarnos de que cada persona que entra por nuestras puertas reciba un servicio de
-                calidad y una atención personalizada. Nos aseguramos de escuchar as necesidades de cada cliente y
-                trabajar con ellos para asegurarnos de que reciban el mejor servicio posible.
-            </p>
-        </article> <!-- Cerramos Article-->
+            <!-- Section para las tres Marcas Principales-->
+            <section class="brandcars">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.audi.com.ar/ar/web/es.html"><img src="./assets/img/audilogo.png"
+                            class="card-img-top" alt="Logo de Audi"></a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.astonmartin.com/en/"><img src="./assets/img/amlogo.png" class="card-img-top"
+                            alt="Logo de Aston Martin"></a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.honda.com.ar/"><img src="./assets/img/hondalogo.png" class="card-img-top"
+                            alt="Logo de Honda"></a>
+                </div>
+            </section> <!-- Cerramos Section Brandcars-->
+
+            <!--Article detallando brevemente la empresa-->
+            <article class="art-index">
+                <h3 id="p0">
+                    ¡Bienvenidos a Infernal Garage, te presentamos nuestra empresa de lavado de autos y
+                    detailing!
+                </h3> <!-- h2 para el título de bienvenida-->
+
+                <p class="texto">
+                    Nos dedicamos al cuidado y mantenimiento de vehículos de todo tipo,
+                    desde automóviles hasta camiones y SUV. Ofrecemos una amplia gama de servicios de lavado de autos y
+                    detailing, que van desde un simple lavado hasta un detallado completo del vehículo.
+                <p class="texto">No importa si tienes un Toyota, un BMW, un Audi o
+                    un Chevrolet, en nuestra empresa podemos cuidar de tu vehículo sin importar la marca o modelo.</p>
+                <p class="texto">Nos enorgullece ofrecer un servicio excepcional a cada uno de nuestros clientes,
+                    independientemente de
+                    la marca o modelo de su vehículo y nos esforzamos por asegurarnos de que cada persona que entra por
+                    nuestras puertas reciba un servicio de
+                    calidad y una atención personalizada.</p>
+                </p>
+            </article> <!-- Cerramos Article-->
     </main>
 
     <!-- Footer con contenido básico-->
